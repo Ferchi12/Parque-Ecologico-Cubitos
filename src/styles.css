@@ -100,7 +100,7 @@ button:disabled {
 
 .fancy-button {
   background-color: white;
-  color: #2d6aa7;
+  color: #4594e2;
 }
 
 .fancy-button i.material-icons {
@@ -125,21 +125,28 @@ app-top-bar h1 {
   color: white;
   margin: 0;
 }
-
-/* Checkout Cart, Shipping Prices */
-
-.cart-item,
-.shipping-item {
-  width: 100%;
-  min-width: 400px;
-  max-width: 450px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 16px 32px;
-  margin-bottom: 8px;
-  border-radius: 2px;
-  background-color: #eeeeee;
+.dropdown {
+  display: inline-block;
+  position: relative;
 }
-
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(18, 145, 18);
+  overflow: auto;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #0f0e0e;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #000000;
+  background-color: #66eb3e;
+}
 
